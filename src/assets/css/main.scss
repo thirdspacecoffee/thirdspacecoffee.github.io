@@ -1,0 +1,93 @@
+$primary-color: #fffdf9;
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #000000;
+  width: 85%;
+  margin: auto;
+}
+
+.canvas {
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.google-maps {
+  position: relative;
+  padding-bottom: 35%; // This is the aspect ratio
+  min-height: 380px;
+  height: 0;
+  overflow: hidden;
+}
+
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+body {
+  background: url('assets/img/burlap2.jpg') fixed;
+}
+
+footer {
+  /* background-color: #F5E9B7; */
+  border-top: 5px #000;
+  background-color: rgba(255, 255, 255, 0.75);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+footer p {
+  color: #4e4d4d;
+  text-align: center;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  margin: 0;
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+footer ul {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding-top: 5px;
+  -webkit-padding-start: 0px;
+  text-align: center;
+}
+
+footer li {
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+footer ul a {
+  color: #4e4d4d;
+  padding: 2px 10px;
+}
+
+/* footer a:hover { */
+/* background-color: #696969; */
+/* } */
+
+#blueimp-gallery a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.chownow-container>a.chownow-close:not([href]):not([tabindex]) {
+  color: #fff;
+}
