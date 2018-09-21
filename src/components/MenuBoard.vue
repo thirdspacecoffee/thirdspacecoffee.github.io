@@ -56,6 +56,7 @@
       </b-col>
       <b-col sm="3">
         <h4>BREAKFAST</h4>
+        <em>Available until 11am</em>
         <hr/>
         <ul>
           <li v-for="(menuProduct, index) in breakfast" :key="index">
@@ -74,6 +75,7 @@
       </b-col>
       <b-col sm="3">
         <h4>LUNCH</h4>
+        <em>Begins at 11am</em>
         <hr/>
         <ul>
           <li v-for="(menuProduct, index) in lunch" :key="index">
