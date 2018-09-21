@@ -116,7 +116,8 @@ export default {
           new MenuProduct('Pour Over', null),
           new MenuProduct('Americano', null),
           new MenuProduct('Espresso', null),
-          new MenuProduct('Cold Brew', null)
+          new MenuProduct('Cold Brew', null),
+          new MenuProduct('Cafe Au lait', null)
         ],
         milk: [
           new MenuProduct('Macchiato', null),
@@ -142,12 +143,14 @@ export default {
         new MenuProduct('Biscuits & Gravy', null),
         new MenuProduct('Toast', 'Cashew nut butter, Honey, and Banana on Wheat Bread.'),
         new MenuProduct('Breakfast Bite', 'Ham, Bacon, Egg, and Cheese, with Side of Fruit on Wheat Bread or Flour Wrap.'),
+        new MenuProduct('Sausage Egg and Cheese Sandwich', null),
         new MenuProduct('Veggie Breakfast Bite', 'Egg, Spinach, Onion, Green Peppers, with Side of Fruit on Wheat Bread or Spinach Wrap')
       ],
       lunch: [
         new MenuProduct('Ham & Cheddar', 'Ham, Cheddar, Mayo on 8-Grain Wheat Bread, Served with Chips or Fruit'),
         new MenuProduct('Veggie Sandwich', 'Lettuce, Tomato, Cucumber, Onion, Roasted Red Peppers, Green Peppers, Hummus, Cilantro Lime Sauce on 8-Grain Wheat Bread.  Served with Chips or Fruit.'),
-        new MenuProduct('All In Club', 'Ham, Turkey, Bacon, Monterey Jack, Pepper Jack, Spinach, Lettuce, Tomato, Onion, Green Peppers, Cucumber, Roasted Red Peppers, Mesquite Mayo on 8-Grain Wheat Bread.  Served with Chips or Fruit.')
+        new MenuProduct('All In Club', 'Ham, Turkey, Bacon, Monterey Jack, Pepper Jack, Spinach, Lettuce, Tomato, Onion, Green Peppers, Cucumber, Roasted Red Peppers, Mesquite Mayo on 8-Grain Wheat Bread.  Served with Chips or Fruit.'),
+        new MenuProduct('Turkey Avocado Sandwich', null)
       ]
     }
   }
