@@ -8,9 +8,7 @@
         <h5>BLACK</h5>
         <ul>
           <li v-for="(menuProduct, index) in coffee.black" :key="index">
-            <span :id="'li-black-coffee-'+index">
-              {{ menuProduct.title }}
-            </span>
+            <span :id="'li-black-coffee-'+index" v-html="menuProduct.renderMenu()"/>
             <b-popover v-if="menuProduct.description != null"
                   :target="'li-black-coffee-'+index"
                   placement="top"
@@ -23,9 +21,7 @@
         <h5>MILK</h5>
         <ul>
           <li v-for="(menuProduct, index) in coffee.milk" :key="index">
-            <span :id="'li-milk-coffee-'+index">
-              {{ menuProduct.title }}
-            </span>
+            <span :id="'li-milk-coffee-'+index" v-html="menuProduct.renderMenu()"/>
             <b-popover v-if="menuProduct.description != null"
                   :target="'li-milk-coffee-'+index"
                   placement="top"
@@ -41,9 +37,7 @@
         <hr/>
         <ul>
           <li v-for="(menuProduct, index) in notCoffee" :key="index">
-            <span :id="'li-not-coffee-'+index">
-              {{ menuProduct.title }}
-            </span>
+            <span :id="'li-not-coffee-'+index" v-html="menuProduct.renderMenu()"/>
             <b-popover v-if="menuProduct.description != null"
                   :target="'li-not-coffee-'+index"
                   placement="top"
@@ -60,9 +54,7 @@
         <hr/>
         <ul>
           <li v-for="(menuProduct, index) in breakfast" :key="index">
-            <span :id="'li-breakfast-'+index">
-              {{ menuProduct.title }}
-            </span>
+            <span :id="'li-breakfast-'+index" v-html="menuProduct.renderMenu()"/>
             <b-popover v-if="menuProduct.description != null"
                     :target="'li-breakfast-'+index"
                     placement="top"
@@ -79,9 +71,7 @@
         <hr/>
         <ul>
           <li v-for="(menuProduct, index) in lunch" :key="index">
-            <span :id="'li-lunch-'+index">
-              {{ menuProduct.title }}
-            </span>
+            <span :id="'li-lunch-'+index" v-html="menuProduct.renderMenu()"/>
             <b-popover v-if="menuProduct.description != null"
                    :target="'li-lunch-'+index"
                    placement="top"
@@ -103,6 +93,25 @@ class MenuProduct {
     this.title = title
     this.description = description
   }
+
+  renderMenu () {
+    var out = '<span>' + this.title + '</span>'
+    return out
+  }
+}
+
+class DrinkProduct extends MenuProduct {
+  constructor (title, description, sizeOptions) {
+    super(title, description)
+    this.sizeOptions = sizeOptions
+  }
+
+  renderMenu () {
+    if (this.sizeOptions != null) {
+      var out = '<span>' + this.title + ' <em>(' + this.sizeOptions.join(', ') + ')</em>' + '</span>'
+    }
+    return out
+  }
 }
 
 export default {
@@ -112,32 +121,32 @@ export default {
       popoverTrigger: 'hover',
       coffee: {
         black: [
-          new MenuProduct('Batch Brew', null),
-          new MenuProduct('Pour Over', null),
-          new MenuProduct('Americano', null),
-          new MenuProduct('Espresso', null),
-          new MenuProduct('Cold Brew', null),
-          new MenuProduct('Cafe Au lait', null)
+          new DrinkProduct('Batch Brew', null, ['12oz', '16oz']),
+          new DrinkProduct('Pour Over', null),
+          new DrinkProduct('Americano', 'Available Iced', ['12oz', '16oz']),
+          new DrinkProduct('Espresso', null),
+          new DrinkProduct('Cold Brew', null, ['16oz']),
+          new DrinkProduct('Cafe Au lait', null)
         ],
         milk: [
-          new MenuProduct('Macchiato', null),
-          new MenuProduct('Cortado', null),
-          new MenuProduct('Cappuccino', null),
-          new MenuProduct('Flat White', null),
-          new MenuProduct('Latte', null),
-          new MenuProduct('Bonner Brew', null)
+          new DrinkProduct('Macchiato', null, ['3oz']),
+          new DrinkProduct('Cortado', null, ['4oz']),
+          new DrinkProduct('Cappuccino', null, ['6oz']),
+          new DrinkProduct('Flat White', null, ['8oz']),
+          new DrinkProduct('Latte', 'Available Iced', ['12oz', '16oz']),
+          new DrinkProduct('Bonner Brew', null)
         ]
       },
       notCoffee: [
-        new MenuProduct('Chai', null),
-        new MenuProduct('Hot Chocolate', null),
-        new MenuProduct('Steamer', null),
-        new MenuProduct('Smoothies', 'Peach, Mango, Blueberry, Strawberry'),
-        new MenuProduct('Espresso Milkshake', null),
-        new MenuProduct('Iced Tea', null),
-        new MenuProduct('Hot Tea', null),
-        new MenuProduct('Lemonade', null),
-        new MenuProduct('Arnold Palmer', null)
+        new DrinkProduct('Chai', 'Available Iced', ['12oz', '16oz']),
+        new DrinkProduct('Hot Chocolate', null, ['12oz', '16oz']),
+        new DrinkProduct('Steamer', null, ['12oz', '16oz']),
+        new DrinkProduct('Smoothies', 'Peach, Mango, Blueberry, Strawberry', ['16oz']),
+        new DrinkProduct('Espresso Milkshake', null, ['16oz']),
+        new DrinkProduct('Iced Tea', null, ['16oz']),
+        new DrinkProduct('Hot Tea', null),
+        new DrinkProduct('Lemonade', null, ['16oz']),
+        new DrinkProduct('Arnold Palmer', null, ['16oz'])
       ],
       breakfast: [
         new MenuProduct('Biscuits & Gravy', null),

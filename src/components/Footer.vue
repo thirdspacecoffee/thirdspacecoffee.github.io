@@ -16,7 +16,7 @@
         <div class="col-sm-4 align-self-center">
           <ul>
             <li v-for="social in socials" :key="social.url"><a :href="social.url"><font-awesome-icon :icon="social.icon" size="lg" /></a></li>
-            <li><a :href="'mailto:' + email"><font-awesome-icon icon="envelope" size="lg" /></a></li>
+            <li v-if="email != null"><a :href="'mailto:' + email"><font-awesome-icon icon="envelope" size="lg" /></a></li>
           </ul>
           <p>&copy; 2018 Third Space Coffee</p>
         </div>

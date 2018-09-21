@@ -7,7 +7,7 @@ import router from './router'
 // Reference Docs here: https://github.com/FortAwesome/vue-fontawesome
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faFacebook, faInstagram, faFacebookSquare, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faInstagram, faFacebookSquare, faTwitter, faYelp } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import BootstrapVue from 'bootstrap-vue'
@@ -15,7 +15,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'bootstrap/dist/css/bootstrap.css'
 Vue.use(BootstrapVue)
 
-library.add(faEnvelope, faFacebook, faInstagram, faFacebookSquare, faTwitter)
+library.add(faEnvelope, faFacebook, faInstagram, faFacebookSquare, faTwitter, faYelp)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

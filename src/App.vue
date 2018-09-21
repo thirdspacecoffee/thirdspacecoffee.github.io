@@ -3,7 +3,7 @@
     <HeaderHome :isSmall="isSmall" v-if="$route.name == 'Home'"/>
     <Header :isSmall="isSmall" v-if="$route.name != 'Home'"/>
     <router-view :isSmall="isSmall" />
-    <Footer :socials="socials" :email="email" :phone="phone" />
+    <Footer :socials="socials" :phone="phone" /> <!-- add this to enable the email icon: :email="email" -->
   </div>
 </template>
 
@@ -34,6 +34,10 @@ export default {
         twitter: {
           url: 'https://twitter.com/3rdspacecoffee',
           icon: ['fab', 'twitter']
+        },
+        yelp: {
+          url: 'https://www.yelp.com/biz/third-space-coffee-bonner-springs-2',
+          icon: ['fab', 'yelp']
         }
       },
       email: 'thirdspace@example.com',
