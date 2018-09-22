@@ -185,4 +185,12 @@ export default {
   padding-top: 3px;
 }
 
+h4 {
+  font-family: Bradley Hand, sans-serif;
+}
+
+h5 {
+  font-family: Bradley Hand, sans-serif;
+}
+
 </style>

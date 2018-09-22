@@ -54,7 +54,7 @@ export default {
 .filler {
   text-align: right;
   padding: 55px;
-  background: rgba(224, 191, 129, 0.8);
+  background: rgba(214, 190, 137, 0.8);
 }
 
 .filler-small {
