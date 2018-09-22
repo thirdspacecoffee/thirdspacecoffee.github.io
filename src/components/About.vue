@@ -70,6 +70,6 @@ img {
 }
 
 h2 {
-  font-family: Bradley hand, sans-serif;
+  font-family: Bradley Hand, sans-serif;
 }
 </style>
