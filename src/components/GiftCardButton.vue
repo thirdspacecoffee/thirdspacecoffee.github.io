@@ -24,13 +24,13 @@ export default {
 <style scoped>
 .btn-order {
   color: #000;
-  background-color: rgb(218, 245, 183);
-  border-color: #95c046;
+  background-color: #F5E9B7;
+  border-color: #c0aa46;
   font-weight: 600;
 }
 
 .btn-order:hover {
   color: #000;
-  background-color: rgb(234, 247, 216);
+  background-color:  rgb(247, 241, 216);
 }
 </style>

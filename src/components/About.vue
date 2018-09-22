@@ -24,7 +24,7 @@
             <h2>Who are we?</h2>
             <div class="short-desc"><em>Third Space Coffee is owned and run by Bill and Amy Gibbs.</em></div>
         </div>
-        <p>We've lived in Bonner Springs since 2009 and have grown to love our community.  Amy has over 20 years of experience in the coffee industry.  Five of those years were managing.  She's organized, creative, and an awesome coffee expert (and cook).  She always has a smiling face and heart to serve.  But what Bill and Amy are most excited about is meeting new people, getting to know them and sharing hope and redemption over a hot cup of joe.</p>
+        <p>Bill and Amy have lived in Bonner Springs since 2009 and have grown to love their community.  Amy has over 20 years of experience in the coffee industry.  Five of those years were managing.  She's organized, creative, and an awesome coffee expert (and cook).  She always has a smiling face and heart to serve.  But what Bill and Amy are most excited about is meeting new people, getting to know them and sharing hope and redemption over a hot cup of joe.</p>
       </div>
     </b-col>
   </b-row>
@@ -67,5 +67,9 @@ export default {
 
 img {
   width: 100%;
+}
+
+h2 {
+  font-family: Bradley hand, sans-serif;
 }
 </style>

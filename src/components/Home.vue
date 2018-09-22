@@ -32,7 +32,7 @@
           <OrderOnlineButton title="Order Online!"/>
         </div>
         <div class="gift-card-container">
-          <h5>Need a Gift Card?</h5>
+          <h5><em>Need a Gift Card?</em></h5>
           <GiftCardButton/>
         </div>
       </b-col>
@@ -100,6 +100,10 @@ table.hours tr td:first-child {
 .gift-card-container,
 .order-online-container {
   margin-top: 50px;
+}
+
+.gift-card-container{
+  margin-bottom: 50px;
 }
 
 </style>
