@@ -1,6 +1,7 @@
 <template>
 <div class="header">
   <b-container fluid>
+    <!-- Bind the `header-row` class when we are not in isSmall mode -->
     <b-row :class="{ 'header-row': !isSmall}">
       <b-col sm="3" class="logo">
         <img src="../assets/ThirdSpaceSolid.svg">
@@ -49,12 +50,12 @@ export default {
 
 .header-row {
   height: 175px;
+  background: rgba(214, 190, 137, 0.8);
 }
 
 .filler {
   text-align: right;
   padding: 55px;
-  background: rgba(214, 190, 137, 0.8);
 }
 
 .filler-small {

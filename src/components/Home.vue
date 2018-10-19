@@ -27,7 +27,7 @@
           <h3>Be together. Drink coffee.</h3>
           <p>Located in Downtown Bonner Springs</p>
         </div>
-        <div class="order-online-container">
+        <div v-if="storeState.onlineOrderingEnabled" class="order-online-container">
           <h4><em>In a rush?</em></h4>
           <OrderOnlineButton title="Order Online!"/>
         </div>
@@ -46,9 +46,15 @@
 <script>
 import OrderOnlineButton from './OrderOnlineButton'
 import GiftCardButton from './GiftCardButton'
+import { store } from '../store.js'
 
 export default {
   name: 'Home',
+  data () {
+    return {
+      storeState: store.state
+    }
+  },
   components: {
     OrderOnlineButton,
     GiftCardButton

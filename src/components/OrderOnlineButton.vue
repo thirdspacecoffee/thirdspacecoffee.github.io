@@ -1,10 +1,12 @@
 <template>
-  <div class="order-button">
+  <div v-if="storeState.onlineOrderingEnabled" class="order-button">
     <a role="button" class="btn btn-order chownow-order-online" target="_blank">{{ title }}</a>
   </div>
 </template>
 
 <script>
+import { store } from '../store.js'
+
 export default {
   name: 'OrderOnlineButton',
   props: {
@@ -15,7 +17,8 @@ export default {
   },
   data () {
     return {
-      link: '#'
+      link: '#',
+      storeState: store.state
     }
   },
   mounted () {
