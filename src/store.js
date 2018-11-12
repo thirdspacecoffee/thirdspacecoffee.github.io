@@ -1,6 +1,6 @@
 // Declare a shared state store
 export const store = {
   state: {
-    onlineOrderingEnabled: false
+    onlineOrderingEnabled: true
   }
 }
