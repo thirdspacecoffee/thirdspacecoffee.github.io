@@ -10,7 +10,7 @@
           </tr>
           <tr>
             <td>Friday</td>
-            <td>6 am - 7 pm</td>
+            <td>6 am - 5 pm</td>
           </tr>
           <tr>
             <td>Saturday</td>
