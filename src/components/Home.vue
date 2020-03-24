@@ -2,19 +2,19 @@
   <b-container fluid class="canvas">
     <b-row>
       <b-col md="3" class="main sidebar">
-        <h3>Hours</h3>
+        <h3>Hours (adjusted)</h3>
         <table class="hours">
           <tr>
             <td>Mon - Thurs</td>
-            <td>6 am - 5 pm</td>
+            <td>8 am - 5 pm</td>
           </tr>
           <tr>
             <td>Friday</td>
-            <td>6 am - 5 pm</td>
+            <td>8 am - 5 pm</td>
           </tr>
           <tr>
             <td>Saturday</td>
-            <td>7 am - 5 pm</td>
+            <td>8 am - 5 pm</td>
           </tr>
           <tr>
             <td>Sunday</td>
