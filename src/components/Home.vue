@@ -6,15 +6,15 @@
         <table class="hours">
           <tr>
             <td>Mon - Thurs</td>
-            <td>8 am - 5 pm</td>
+            <td>8 am - 3 pm</td>
           </tr>
           <tr>
             <td>Friday</td>
-            <td>8 am - 5 pm</td>
+            <td>8 am - 3 pm</td>
           </tr>
           <tr>
             <td>Saturday</td>
-            <td>8 am - 5 pm</td>
+            <td>8 am - 3 pm</td>
           </tr>
           <tr>
             <td>Sunday</td>
