@@ -31,6 +31,15 @@
           <h4><em>In a rush?</em></h4>
           <OrderOnlineButton title="Order Online!"/>
         </div>
+        <div class="download-apps-container">
+          <p><em>Want to make ordering easier?  Download our App!</em></p>
+          <a href='https://apps.apple.com/us/app/third-space-coffee/id1506070790' target="blank">
+          <img class="apple" alt='Download on the App Store' src='../assets/img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg'/>
+          </a>
+          <a href='https://play.google.com/store/apps/details?id=com.chownow.thirdspacecoffee&hl=en_US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="blank">
+          <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/>
+          </a>
+        </div>
         <div class="gift-card-container">
           <h5><em>Need a Gift Card?</em></h5>
           <GiftCardButton/>
@@ -106,6 +115,23 @@ table.hours tr td:first-child {
 .gift-card-container,
 .order-online-container {
   margin-top: 50px;
+}
+
+.download-apps-container {
+  margin-top: 20px;
+}
+
+.download-apps-container p {
+  margin-bottom: 0px;
+  font-size: 1.15em;
+}
+
+.download-apps-container a img {
+  height: 50px;
+}
+
+.download-apps-container a img.apple {
+  padding: 8px;
 }
 
 .gift-card-container{
