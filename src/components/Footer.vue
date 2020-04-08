@@ -8,7 +8,7 @@
           <strong>Third Space Coffee</strong><br>
           226 Oak St.<br>
           Bonner Springs, KS 66012<br>
-          {{ phone }}
+          <a :href="'tel:' + phone.replace(/-/g, '')">{{ phone }}</a>
           </p>
         </div>
         <div class="col-sm-4">

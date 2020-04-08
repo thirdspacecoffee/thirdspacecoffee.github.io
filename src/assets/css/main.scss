@@ -74,14 +74,18 @@ footer li {
   padding-left: 10px;
 }
 
-footer ul a {
+footer ul a,
+footer a {
   color: #4e4d4d;
+}
+
+footer ul a {
   padding: 2px 10px;
 }
 
-/* footer a:hover { */
-/* background-color: #696969; */
-/* } */
+footer a:hover {
+  color: #696969;
+}
 
 #blueimp-gallery a{
   color: #fff;
