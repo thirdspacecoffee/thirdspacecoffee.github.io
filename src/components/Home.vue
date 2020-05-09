@@ -27,6 +27,7 @@
           <h3>Be together. Drink coffee.</h3>
           <p>Located in Downtown Bonner Springs</p>
         </div>
+        <div class="submain"><p><em>Want to help the  communities of Bonner Springs and Edwardsville, Kansas? <a target="blank" href="https://docs.google.com/document/d/1BZDTlDRVHfzgg5LlkT1ORMWscsz0mO9y49KoKYgeRgg/edit">Click here</a> to learn more...</em></p></div>
         <div v-if="storeState.onlineOrderingEnabled" class="order-online-container">
           <h4><em>In a rush?</em></h4>
           <OrderOnlineButton title="Order Online!"/>
@@ -104,6 +105,10 @@ table.hours tr td:first-child {
 
 .main p {
   font-size: 20px;
+}
+
+.submain p {
+  font-size: 16px;
 }
 
 .center {
