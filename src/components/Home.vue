@@ -21,6 +21,7 @@
             <td>Closed</td>
           </tr>
         </table>
+        <p><em>Open for dine-in and carry-out</em></p>
       </b-col>
       <b-col md="5" class="main center">
         <div>
@@ -109,6 +110,11 @@ table.hours tr td:first-child {
 
 .submain p {
   font-size: 16px;
+}
+
+.sidebar p {
+  font-size: 16px;
+  text-align: center;
 }
 
 .center {
