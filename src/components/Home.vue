@@ -6,15 +6,15 @@
         <table class="hours">
           <tr>
             <td>Mon - Thurs</td>
-            <td>7 am - 3 pm</td>
+            <td>6:30am - 3 pm</td>
           </tr>
           <tr>
             <td>Friday</td>
-            <td>7 am - 3 pm</td>
+            <td>6:30am - 3 pm</td>
           </tr>
           <tr>
             <td>Saturday</td>
-            <td>7 am - 3 pm</td>
+            <td>6:30am - 3 pm</td>
           </tr>
           <tr>
             <td>Sunday</td>
@@ -29,6 +29,16 @@
           <p>Located in Downtown Bonner Springs</p>
         </div>
         <div class="submain"><p><em>Want to help the  communities of Bonner Springs and Edwardsville, Kansas? <a target="blank" href="https://docs.google.com/document/d/1BZDTlDRVHfzgg5LlkT1ORMWscsz0mO9y49KoKYgeRgg/edit">Click here</a> to learn more...</em></p></div>
+        <div v-if="storeState.eventIsCurrent">
+          <h5><em>Upcoming Events</em></h5>
+          <strong>'Taste' by Third Space</strong>
+          <div class="submain">
+            <img src="https://s3.amazonaws.com/images.signupgenius.com/memberImages/C295D7D30DD284100C3D136408B8EFBD_92109158.png" width="200" alt="Taste Event Image">
+            <div>A wine, cheese and chocolate tasting event.</div>
+            <div><em>11/13/2020 (Fri.) - 5:30pm - 8:30pm CDT</em></div>
+            <strong><a href="https://www.signupgenius.com/go/9040F4CACA62AA7F58-taste" target="_blank">Learn more and Sign Up!</a></strong>
+          </div>
+        </div>
         <div v-if="storeState.onlineOrderingEnabled" class="order-online-container">
           <h4><em>In a rush?</em></h4>
           <OrderOnlineButton title="Order Online!"/>
