@@ -49,10 +49,10 @@
         </div>
         <div class="download-apps-container">
           <p><em>Want to make ordering easier?  Download our App!</em></p>
-          <a href='https://apps.apple.com/us/app/third-space-coffee/id1506070790' target="blank">
+          <a href='https://toasttakeout.page.link/landingpage' target="blank">
           <img class="apple" alt='Download on the App Store' src='../assets/img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg'/>
           </a>
-          <a href='https://play.google.com/store/apps/details?id=com.chownow.thirdspacecoffee&hl=en_US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="blank">
+          <a href='https://play.google.com/store/apps/details?id=com.toasttab.consumer' target="blank">
           <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/>
           </a>
         </div>
