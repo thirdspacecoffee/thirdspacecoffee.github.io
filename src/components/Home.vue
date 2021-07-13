@@ -5,8 +5,12 @@
         <h3>Hours (adjusted)</h3>
         <table class="hours">
           <tr>
-            <td>Mon - Thurs</td>
+            <td>Mon - Wed</td>
             <td>6:30am - 3 pm</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>6:00am - 3 pm</td>
           </tr>
           <tr>
             <td>Friday</td>
@@ -14,7 +18,7 @@
           </tr>
           <tr>
             <td>Saturday</td>
-            <td>6:30am - 3 pm</td>
+            <td>7:00am - 3 pm</td>
           </tr>
           <tr>
             <td>Sunday</td>

@@ -15,7 +15,7 @@ export default {
   },
   data () {
     return {
-      link: 'https://squareup.com/gift/4CE87BKGMYSWE/order'
+      link: 'https://www.toasttab.com/third-space-coffee/giftcards'
     }
   }
 }

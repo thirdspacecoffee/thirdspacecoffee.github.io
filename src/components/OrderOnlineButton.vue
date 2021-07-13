@@ -1,6 +1,6 @@
 <template>
   <div v-if="storeState.onlineOrderingEnabled" class="order-button">
-    <a role="button" class="btn btn-order chownow-order-online" target="_blank">{{ title }}</a>
+    <a role="button" class="btn btn-order" :href="link" target="_blank">{{ title }}</a>
   </div>
 </template>
 
@@ -17,15 +17,9 @@ export default {
   },
   data () {
     return {
-      link: '#',
+      link: 'https://www.toasttab.com/third-space-coffee',
       storeState: store.state
     }
-  },
-  mounted () {
-    let chowNowScript = document.createElement('script')
-    chowNowScript.setAttribute('src', 'https://cf.chownowcdn.com/latest/static/integrations/ordering-modal.min.js')
-    chowNowScript.setAttribute('data-chownow-company-id', '12718')
-    document.head.appendChild(chowNowScript)
   }
 }
 </script>
